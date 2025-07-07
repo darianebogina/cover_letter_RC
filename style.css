@@ -1,5 +1,7 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
-
+@import 'styles/fonts.css';
+@import 'styles/left_side.css';
+@import 'styles/right_side.css';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +16,8 @@ html {
 body {
     font-size: 1.2rem;
     max-width: 1440px;
-    height: 860px;
+    width: 100%;
+    /* min-height: 100vh; */
     margin: 0 auto;
     font-family: 'TT Commons', 'Verdana', sans-serif;
     color: rgb(255, 255, 255);
@@ -22,197 +25,24 @@ body {
 
 .main {
     display: flex;
-    gap: 32px;
-    height: 860px;
-    /* justify-content: space-between; */
+    flex-direction: column;
+    padding: 26px 40px 0 40px;
+    /* min-height: 100vh; */
     background-color: rgb(0, 0, 0);
-}
-
-.left__side {
-    max-width: 322px;
-    height: fit-content;
-    margin: 40px 0px 0px 40px;
-}
-
-.left__side img {
-    width: 100%;
-}
-
-.briefly {
-    display: flex;
-    flex-direction: column;
-    width: 322px;
-    margin-top: -30px;
-    border-radius: 24px 24px 0 0;
-    height: 440px;
-
-    position: relative;
-    z-index: 1;
-    background-color: rgb(245, 27, 27);
-}
-
-.briefly img {
-    width: 60px;
-
-    margin-top: -18px;
-    margin-left: 131px;
-
-    position: relative;
-    z-index: 1;
-}
-
-.briefly__wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 322px;
-    height: auto;
-    gap: 40px;
-
-    padding: 40px 24px;
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 233px;
-}
-
-h1 {
-    font-family: 'Redcollar', 'Verdana', sans-serif;
-    font-weight: 400;
-    /* font-style: Regular; */
-    font-size: 2.4rem;
-
-    line-height: 28px;
-    letter-spacing: -2%;
-}
-
-p {
-    font-family: 'TT Commons', 'Verdana', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 24px;
-    /* letter-spacing: -2%; */
-}
-
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 270px;
-}
-
-.contact {
-    display: flex;
-    width: fit-content;
-    gap: 16px;
-}
-
-.contact img {
-    width: 24px;
-    height: 24px;
-    margin: 0;
-    padding: 0;
-}
-
-/*-----------------------------------------------------------------------------------*/
-.right__side {
-    max-width: 1009px;
-    width: 100%;
-    margin-top: 26px;
-    height: 786px;
 }
 
 .logo__wrapper {
     display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
+    width: 240px;
+    height: 24px;
 }
 
-.right__side img {
-    max-width: 100%;
-    height: auto;
-}
-
-.frame {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    gap: 32px;
-}
-
-.introduction {
-    max-width: 690px;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    letter-spacing: -1%;
-}
-
-.info {
-    width: 100%;
-    height: fit-content;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-.info__wrapper {
-    max-width: 930px;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 48px;
-    margin-left: 28px;
-    gap: 20px;
-}
-
-.edu__frame {
-    width: 538px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.edu__section {
-    display: flex;
-    flex-direction: column;
-    width: 323px;
-    height: fit-content;
-    gap: 8px;
-}
-
-.edu__item {
-    width: 323px;
-    height: auto;
-}
-
-
-hr {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-
-.skills__frame {
-    width: 538px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.skills__list {
+.main__wrapper {
     display: flex;
     gap: 32px;
-
-    list-style: none
-}
-
-.skills__list li {
-    font-family: 'TT Commons', 'Verdana', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 /*FONTS*/
@@ -222,6 +52,16 @@ hr {
         url('./fonts/TTCommons-Thin.woff2') format('woff2'),
         url('./fonts/TTCommons-Thin.woff') format('woff'),
         url('./fonts/TTCommons-Thin.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Redcollar';
+    src: local('Redcollar'), local('Redcollar'),
+        url('./fonts/Redcollar.woff2') format('woff2'),
+        url('./fonts/Redcollar.woff') format('woff'),
+        url('./fonts/Redcollar.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
