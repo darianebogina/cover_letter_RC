@@ -15,10 +15,12 @@
     width: 100%;
     margin-top: 10px;
     gap: 32px;
+    height: 550px;
 }
 
 .introduction {
     max-width: 690px;
+    width: 100%;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -26,27 +28,30 @@
 }
 
 .info {
-    width: 100%;
+    /* width: 100%; */
     height: fit-content;
     border: 1px solid rgb(255, 255, 255);
+    padding: 48px 0 0 28px;
 }
 
 .info__wrapper {
     max-width: 930px;
-    height: 550px;
+    /* width: 100%; */
+    /* min-height: 550px; */
     display: flex;
     flex-direction: column;
 
-    margin-top: 48px;
-    margin-left: 28px;
+    /* margin-top: 48px;
+    margin-left: 28px; */
     gap: 20px;
 }
 
-.edu__frame {
+.info__frame {
     max-width: 600px;
     display: flex;
-    justify-content: space-between;
-    gap:20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    gap: 72px;
 }
 
 .edu__section {
@@ -58,8 +63,9 @@
 }
 
 .edu__item {
-    max-width: 323px;
+    /* max-width: 323px; */
     height: auto;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -69,11 +75,13 @@ hr {
 }
 
 
-.skills__frame {
+/* .skills__frame {
     max-width: 538px;
     display: flex;
-    justify-content: space-between;
-}
+    /* justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 72px;
+} */
 
 
 .skills__list {

@@ -1,7 +1,8 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
 @import 'styles/fonts.css';
-@import 'styles/left_side.css';
-@import 'styles/right_side.css';
+
+/* @import 'styles/left_side.css';
+@import 'styles/right_side.css'; */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,10 +17,8 @@ html {
 body {
     font-size: 1.2rem;
     max-width: 1440px;
-    width: 100%;
-    /* min-height: 100vh; */
     margin: 0 auto;
-    font-family: 'TT Commons', 'Verdana', sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -27,7 +26,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 26px 40px 0 40px;
-    /* min-height: 100vh; */
     background-color: rgb(0, 0, 0);
 }
 
@@ -40,9 +38,134 @@ body {
 
 .main__wrapper {
     display: flex;
-    gap: 32px;
+    gap: 3.1rem;
+}
+
+.left__side {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.my__card {
+    width: 100%;
+    max-width: 322px;
+    height: 780px;
+    background: #F51B1B;
+    /* margin-top: -10px; */
+}
+
+.my__card img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    max-width: 322px;
+    height: 355px;
+}
+
+.briefly {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+    width: 100%;
+    gap: 4rem;
+
+    padding: 40px 24px;
+    margin-top: -30px;
+    background-color: #F51B1B;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 270px;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    max-width: 227px;
+    width: 100%;
+    gap: 1.6rem;
+}
+
+.contact img {
+    max-width: 24px;
+    height: 24px;
     margin: 0;
     padding: 0;
+}
+
+
+/*----------------------------------------*/
+
+.right__side {
+    max-width: 1008px;
+    width: 100%;
+}
+
+.about__me {
+    display: flex;
+    flex-direction: column;
+    max-width: 1008px;
+    width: 100%;
+    margin-top: 10px;
+    gap: 3.2rem;
+}
+
+.introduction {
+    max-width: 690px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: -1%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 930px;
+    width: 100%;
+    gap: 2rem;
+    padding: 48px 0px 0px 28px;
+    border: 1px solid white;
+
+}
+
+.info__frame {
+    display: flex;
+    max-width: 565px;
+    flex-wrap: wrap;
+    gap: 7.2rem;
+}
+
+.edu__item {
+    flex-wrap: wrap;
+}
+
+
+.skills__section {
+    display: flex;
+}
+
+.skills__list {
+    list-style-type: none;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /*FONTS*/
@@ -64,4 +187,43 @@ body {
         url('./fonts/Redcollar.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+}
+
+
+@media (max-width: 1020px) {
+    .info__frame {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 20px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .logo__wrapper {
+        width: 220px;
+        height: 22px;
+        align-self: flex-start;
+    }
+
+    .logo__wrapper img {
+        width: 220px;
+        height: 22px;
+    }
+
+    .main__wrapper {
+        align-items: center;
+        /* max-width: 360px; */
+        flex-direction: column;
+    }
+
+    .left__side {
+        margin-top: 48px;
+        align-items: center;
+    }
 }
