@@ -60,7 +60,7 @@ body {
     background: #F51B1B;
 }
 
-.my__card img {
+.my__photo {
     height: auto;
     object-fit: cover;
     width: 100%;
@@ -68,20 +68,21 @@ body {
     height: 355px;
 }
 
-/* .union {
+.union {
     width: 60px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -50px;
-
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .card__wrapper {
     display: flex;
     flex-direction: column;
     max-width: 322px;
-} */
+    margin-top: -50px;
+}
 
 .briefly {
     display: flex;
@@ -254,20 +255,15 @@ hr {
         margin-top: 48px;
         align-items: center;
     }
-/* 
-    .union {
-        margin-top: -40px;
-    } */
 
-    /* .card__wrapper {
-        /* margin-top: -27px;
-    } */
+    .card__wrapper {
+        margin-top: -55px;
+    }
 
     .briefly {
         width: 100%;
         gap: 3.2rem;
         padding: 24px 16px 40px 16px;
-        margin-top: -20px;
     }
 
     .name {
