@@ -1,0 +1,92 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+@import 'styles/fonts.css';
+@import 'styles/left_side.css';
+@import 'styles/right_side.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "TT Commons", "Arial", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 40px 0 40px;
+    min-height: 860px;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo__wrapper {
+    display: flex;
+    align-self: flex-end;
+    width: 240px;
+    height: 24px;
+}
+
+.main__wrapper {
+    display: flex;
+    gap: 3.1rem;
+    height: 100%;
+    min-height: 762px;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'TT Commons';
+    src: local('TT Commons  Thin'), local('TT-Commons--Thin'),
+        url('./fonts/TTCommons-Thin.woff2') format('woff2'),
+        url('./fonts/TTCommons-Thin.woff') format('woff'),
+        url('./fonts/TTCommons-Thin.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Redcollar';
+    src: local('Redcollar'), local('Redcollar'),
+        url('./fonts/Redcollar.woff2') format('woff2'),
+        url('./fonts/Redcollar.woff') format('woff'),
+        url('./fonts/Redcollar.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 770px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 20px 60px 20px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .logo__wrapper {
+        width: 220px;
+        height: 22px;
+        align-self: flex-start;
+    }
+
+    .logo__wrapper img {
+        width: 220px;
+        height: 22px;
+    }
+
+    .main__wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+}

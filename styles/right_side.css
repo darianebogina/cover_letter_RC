@@ -1,0 +1,133 @@
+.right__side {
+    display: flex;
+    flex-direction: column;
+    max-width: 1008px;
+    width: 100%;
+}
+
+.about__me {
+    display: flex;
+    flex-direction: column;
+    max-width: 1008px;
+    width: 100%;
+    margin-top: 10px;
+    gap: 3.2rem;
+    flex: 1;
+}
+
+.introduction {
+    max-width: 690px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: -1%;
+}
+
+.info__border {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+}
+
+.info__border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.info__border::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: 0;
+    left: 57px;
+    background: transparent;
+    background-image: url('../images/arrow.svg');
+    z-index: 2;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding: 48px 28px 0px 28px;
+    border: 1px solid white;
+    flex: 1;
+    border-top: none;
+    background-color: transparent;
+}
+
+
+.info__frame {
+    display: flex;
+    max-width: 565px;
+    flex-wrap: wrap;
+    gap: 7.2rem;
+}
+
+.edu__section {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2px;
+}
+
+.edu__item {
+    flex-wrap: wrap;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.4;
+}
+
+.skills__section {
+    display: flex;
+}
+
+.skills__list {
+    list-style-type: none;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 1020px) {
+    .info__frame {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .info__border::before {
+        left: 130px;
+    }
+
+    .info {
+        width: 100%;
+        padding: 41px 16px 30px 16px;
+        gap: 2.4rem;
+    }
+
+    .info__frame {
+        gap: 1.6rem;
+    }
+
+    .edu__section {
+        gap: 1.2rem;
+    }
+
+    .skills__list {
+        gap: 1.6rem;
+    }
+}

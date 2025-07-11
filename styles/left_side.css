@@ -1,0 +1,106 @@
+
+.left__side {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    width: 100%;
+    max-width: 322px;
+    flex: 1;
+}
+
+.my__card {
+    width: 100%;
+    max-width: 322px;
+    flex: 1;
+    background: #F51B1B;
+}
+
+.my__photo {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    max-width: 322px;
+    height: 355px;
+}
+
+.union {
+    width: 60px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+    margin-top: -50px;
+}
+
+.briefly {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+    width: 100%;
+    gap: 4rem;
+
+    padding: 40px 24px;
+    background-color: #F51B1B;
+    border-radius: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 270px;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    max-width: 227px;
+    width: 100%;
+    gap: 1.6rem;
+}
+
+.contact img {
+    max-width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 770px) {
+    .left__side {
+        margin-top: 48px;
+        align-items: center;
+    }
+
+    .card__wrapper {
+        margin-top: -55px;
+    }
+
+    .briefly {
+        width: 100%;
+        gap: 3.2rem;
+        padding: 24px 16px 40px 16px;
+    }
+
+    .name {
+        gap: 0.4rem;
+    }
+
+    .contacts {
+        gap: 1.6rem;
+    }
+}
