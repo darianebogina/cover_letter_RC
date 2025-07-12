@@ -1,4 +1,4 @@
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import './styles/modern-normalize.css';
 @import 'styles/fonts.css';
 @import 'styles/left_side.css';
 @import 'styles/right_side.css';
